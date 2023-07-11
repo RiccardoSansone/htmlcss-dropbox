@@ -146,6 +146,12 @@ a{
     text-align: center;
 }
 
+.btn-3{
+    background-color: white;
+    height: 30px;
+    padding: 0.4rem 1.5rem;
+}
+
 .btn-blu{
     background-color:var(--btn-blu);
     color: white;
@@ -239,4 +245,53 @@ header a{
 
 .card-30{
     width: 30%;
+}
+
+.soft{
+    background-color: var(--bg-soft);
+}
+
+.col-50{
+    width: 50%;
+}
+
+.title-purple{
+    color: var(--square-purple);
+}
+
+.gap-2{
+    gap: 2rem;
+}
+
+.just-bet{
+    justify-content: space-between;
+}
+
+footer a{
+    color: white;
+    font-size: 0.7rem;
+}
+
+.bar{
+    width: 80px;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.bar-1{
+    width: 50px;
+    margin: 1.2rem 0;
+    color: gray;
+}
+
+.nav-hover{
+    height: 60px;
+    display: flex; 
+    align-items: center;
+}
+.nav-hover :hover{
+    border-bottom: 1px solid black;
+    height: 60px;
+    display: flex; 
+    align-items: center;
 }

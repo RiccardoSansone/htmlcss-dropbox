@@ -3,12 +3,16 @@
 <head>
     <title>Dropbox</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <nav class="d-flex" id="nav-bar">
             <div class="d-flex col-auto" id="menu-left">
-                <img style="height: 20px;" src="./assets/img/logo-small.png" alt="">
+                <a href="#"><img style="height: 20px;" src="./assets/img/logo-small.png" alt=""></a>   
                 <a href="#">Perchè Dropbox</a>
                 <a href="#">Funzioni</a>
                 <a href="#">Piani e Prezzi</a>
@@ -17,7 +21,7 @@
                 <a href="#">Supporto</a>
                 <a href="#">Contatta l'ufficio vendite</a>
                 <a href="#">Accedi</a>
-                <span>Inizia</span>
+                <a class="btn btn-blu" href="#">Inizia</a>
             </div>
         </nav>
     </header>
@@ -27,11 +31,15 @@
             <div class="container-1">
                 <h1 style="font-size: 3.8rem;">Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
                 <div class="row d-flex">
-                    <div class="col-40 d-flex-column">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Atque eligendi sit qui quos eius impedit omnis accusamus inventore, 
-                         nisi autem illum? Illo reiciendis numquam omnis.
-
+                    <div style="gap: 1.5rem;" class="col-40 d-flex-column">
+                        <p style="line-height: 1.3rem;">
+                            Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto.
+                            Dropbox Business è più di uno spazio di archiviazone sicuro: è un modo intelligente e integrato per 
+                            ottimizzare il flusso di lavoro esistente.
+                        </p>
+                        <a class="btn-1 btn-blu" href="#">Inizia la tua prova gratuita</a>
+                        <p>annulla in qualsiasi momento</p>
+                        <a href="#"><i class="fa-solid fa-2x fa-arrow-down"></i></a>
                     </div>
                     <div class="col-60">
                         <img class="img" src="./assets/img/jumbo.png" alt="">
@@ -43,44 +51,172 @@
         <!-- /first section -->
         <section class="second-section">
             <div class="container-2">
-                <h2 style="padding-bottom: 2.5rem;">Lorem ipsum dolor sit amet consectetur.</h2>
-                <input type="radio" name="name"> Lorem, ipsum dolor.
-                <input type="radio" name="name"> Lorem, ipsum dolor.
+                <h2 style="padding-bottom: 2.5rem;">Trova il piano business che fa per te</h2>
+                <div style="font-size: 0.9rem;" class="d-f gap-0-5 justify-content-left">
+                    <input type="radio" name="name"> Fatturazione mensile   
+                    <input type="radio" name="name"> Fatturazione annuale
+                </div>
                 <div class="row d-flex">
                     <div class="col-30 d-flex-column">
-                        <div class="title">
-                            lorem
+                        <div class="title d-f gap-0-5 align-item-center">
+                            <i class="fa-solid fa-user"></i>Singolo
                         </div>
                         <div class="card">
-                            <h1>Lorem</h1>
+                            <h1>Professional</h1>
                             <div>
-                                <strong>12€</strong>
+                                <strong>€ 12.00</strong>
+                            </div>
+                            <div style="color: gray;">
+                                /mese
+                            </div>
+                            <div>
+                                <ul style="line-height: 1.5rem; padding-bottom: 2.5rem;" class="list-unstyled">
+                                    <li>
+                                        <p><i class="fa-solid fa-user"></i> 1 Utente</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fa-solid fa-folder"></i> 5 TB di spazio di archiviazione sicuro</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fa-solid fa-folder"></i> Funzioni di produttività premium e condivisione file semplice e sicura</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a class="btn-1 btn-blu" href="#">Prova gratis per 30 giorni</a>
+                            </div>
+                            <div>
+                                oppure <span style="text-decoration:underline; color: blue;">acquista ora</span>
+                            </div>
+                            <div>
+                                <strong>Punti Salienti del piano</strong>
+                            </div>
+                            <div>
+                                <ul style="line-height: 1.5rem; padding-bottom: 2.5rem;" class="list-unstyled">
+                                    <li>
+                                        <p><i class="fa-solid fa-check color-blu"></i> Inviare file fino a 100 GB con Dropbox Transfert</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fa-solid fa-check color-blu"></i> Cartelle offline su dispositivi mobili</p>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-30 d-flex-column">
-                        <div class="title">
-                            lorem
+                        <div class="title d-f gap-0-5 align-item-center">
+                            <i class="fa-solid fa-users"></i>Team
+                        </div>
+                        <div class="card">
+                            <h1>Professional</h1>
+                            <div>
+                                <strong>€ 12.00</strong>
+                            </div>
+                            <div style="color: gray;">
+                                /mese
+                            </div>
+                            <div>
+                                <ul style="line-height: 1.5rem; padding-bottom: 2.5rem;" class="list-unstyled">
+                                    <li>
+                                        <p><i class="fa-solid fa-user"></i> 1 Utente</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fa-solid fa-folder"></i> 5 TB di spazio di archiviazione sicuro</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fa-solid fa-folder"></i> Funzioni di produttività premium e condivisione file semplice e sicura</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a class="btn-1 btn-blu" href="#">Prova gratis per 30 giorni</a>
+                            </div>
+                            <div>
+                                oppure <span style="text-decoration:underline; color: blue;">acquista ora</span>
+                            </div>
+                            <div>
+                                <strong>Punti Salienti del piano</strong>
+                            </div>
+                            <div>
+                                <ul style="line-height: 1.5rem; padding-bottom: 2.5rem;" class="list-unstyled">
+                                    <li>
+                                        <p><i class="fa-solid fa-check color-blu"></i> Inviare file fino a 100 GB con Dropbox Transfert</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fa-solid fa-check color-blu"></i> Cartelle offline su dispositivi mobili</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="col-30 d-flex-column">
-                        <div class="title">
-                            lorem
+                        <div class="title d-f gap-0-5 align-item-center">
+                            <i class="fa-solid fa-building"></i>Azienda
+                        </div>
+                        <div class="card">
+                            <h1>Professional</h1>
+                            <div>
+                                <strong>€ 12.00</strong>
+                            </div>
+                            <div style="color: gray;">
+                                /mese
+                            </div>
+                            <div>
+                                <ul style="line-height: 1.5rem; padding-bottom: 2.5rem;" class="list-unstyled">
+                                    <li>
+                                        <p><i class="fa-solid fa-user"></i> 1 Utente</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fa-solid fa-folder"></i> 5 TB di spazio di archiviazione sicuro</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fa-solid fa-folder"></i> Funzioni di produttività premium e condivisione file semplice e sicura</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a class="btn-1 btn-blu" href="#">Prova gratis per 30 giorni</a>
+                            </div>
+                            <div>
+                                oppure <span style="text-decoration:underline; color: blue;">acquista ora</span>
+                            </div>
+                            <div>
+                                <strong>Punti Salienti del piano</strong>
+                            </div>
+                            <div>
+                                <ul style="line-height: 1.5rem; padding-bottom: 2.5rem;" class="list-unstyled">
+                                    <li>
+                                        <p><i class="fa-solid fa-check color-blu"></i> Inviare file fino a 100 GB con Dropbox Transfert</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fa-solid fa-check color-blu"></i> Cartelle offline su dispositivi mobili</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="colonna row">
                     <div class="titolo">
-                        lorem 
+                        <p><i class="fa-solid fa-building"></i> Team</p>
                     </div>
                     <div class="column-card d-flex">
                         <div class="card-70 d-flex-column">
-                            <h3>lorem</h3>
-                            <p>12</p>
+                            <h3>Enterprise</h3>
+                            <div style="padding-top: 1rem;">
+                                <strong>Contatta l'ufficio vendite per i prezzi</strong>                                
+                            </div>
+                            <div style="padding-top: 3rem;">
+                                <p>
+                                    Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.
+                                </p>
+                            </div>
                         </div>
                         <div class="card-30 d-flex-column">
-                            Lorem ipsum dolor sit.
+                            <div style="padding-left: 2rem;">
+                                <a class="btn-1 btn-blu" href="#">Contatta l'ufficio vendite</a>
+                            </div>
                         </div>
                          
                     </div>
@@ -94,7 +230,14 @@
                 <img class="img" src="./assets/img/partner.png" alt="">
             </div>
             <div style="padding: 3rem;" class="col-40">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ducimus ipsam recusandae minus sequi rerum sunt hic itaque ea quas?
+                <h4>Entra in contatto con un partner Dropbox</h4>
+                <div style="font-size: 0.9rem; line-height: 1.5rem; padding: 2rem 0;">
+                    Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere
+                    i tuoi obbiettivi aziendali, tra cui implementazione, integrazione gestione e supporto continui.
+                </div>
+                <div>
+                    <a class="btn-1 btn-gray" href="#">Trova un partner</a>
+                </div>
             </div>
         </section>
         <!-- /third section -->
@@ -105,35 +248,48 @@
                 <div class="d-flex" style="margin-top: 3rem;">
                     <div class="col-33 d-flex-column">
                         <img class="img" src="./assets/img/business-feature-switching-tools.png" alt="">
-                        <h3>Lorem ipsum dolor sit amet.</h3>
-                        <p style="margin-top: 1rem;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque architecto nesciunt repudiandae ab aliquid possimus!</p>
+                        <h3>Passa di meno da uno strumento all'altro</h3>
+                        <p style="margin-top: 1rem; font-size: 0.8rem; line-height: 1.25rem;">Porta a termine le attivita quotidiane con un solo strumento.
+                            Crea, modifica e condividi contenuti cloud da documenti, fogli e Presentazioni di Google,
+                            file Microsoft Office e Dropbox Paper direttamente da Dropbox.
+                        </p>
                     </div>
                     <div class="col-33 d-flex-column">
                         <img class="img" src="./assets/img/business-feature-send-files-it.png" alt="">
-                        <h3>Lorem ipsum dolor sit amet.</h3>
-                        <p style="margin-top: 1rem;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque architecto nesciunt repudiandae ab aliquid possimus!</p>
+                        <h3>Passa di meno da uno strumento all'altro.</h3>
+                        <p style="margin-top: 1rem; font-size: 0.8rem; line-height: 1.25rem;">Porta a termine le attivita quotidiane con un solo strumento.
+                            Crea, modifica e condividi contenuti cloud da documenti, fogli e Presentazioni di Google,
+                            file Microsoft Office e Dropbox Paper direttamente da Dropbox.</p>
                     </div>
                     <div class="col-33 d-flex-column">
                         <img class="img" src="./assets/img/business-feature-coordinate-it.png" alt="">
-                        <h3>Lorem ipsum dolor sit amet.</h3>
-                        <p style="margin-top: 1rem;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque architecto nesciunt repudiandae ab aliquid possimus!</p>
+                        <h3>Passa di meno da uno strumento all'altro.</h3>
+                        <p style="margin-top: 1rem; font-size: 0.8rem; line-height: 1.25rem;">Porta a termine le attivita quotidiane con un solo strumento.
+                            Crea, modifica e condividi contenuti cloud da documenti, fogli e Presentazioni di Google,
+                            file Microsoft Office e Dropbox Paper direttamente da Dropbox.</p>
                     </div>
                 </div>
                 <div class="d-flex" style="margin-top: 2rem;">
                     <div class="col-33 d-flex-column">
                         <img class="img" src="./assets/img/business-feature-integrations-it.png" alt="">
-                        <h3>Lorem ipsum dolor sit amet.</h3>
-                        <p style="margin-top: 1rem;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque architecto nesciunt repudiandae ab aliquid possimus!</p>
+                        <h3>Passa di meno da uno strumento all'altro</h3>
+                        <p style="margin-top: 1rem; font-size: 0.8rem; line-height: 1.25rem;">Porta a termine le attivita quotidiane con un solo strumento.
+                            Crea, modifica e condividi contenuti cloud da documenti, fogli e Presentazioni di Google,
+                            file Microsoft Office e Dropbox Paper direttamente da Dropbox.</p>
                     </div>
                     <div class="col-33 d-flex-column">
                         <img class="img" src="./assets/img/business-feature-multi-device.png" alt="">
-                        <h3>Lorem ipsum dolor sit amet.</h3>
-                        <p style="margin-top: 1rem;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque architecto nesciunt repudiandae ab aliquid possimus!</p>
+                        <h3>Passa di meno da uno strumento all'altro</h3>
+                        <p style="margin-top: 1rem; font-size: 0.8rem; line-height: 1.25rem;">Porta a termine le attivita quotidiane con un solo strumento.
+                            Crea, modifica e condividi contenuti cloud da documenti, fogli e Presentazioni di Google,
+                            file Microsoft Office e Dropbox Paper direttamente da Dropbox.</p>
                     </div>
                     <div class="col-33 d-flex-column">
                         <img class="img" src="./assets/img/business-feature-security.png" alt="">
-                        <h3>Lorem ipsum dolor sit amet.</h3>
-                        <p style="margin-top: 1rem;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque architecto nesciunt repudiandae ab aliquid possimus!</p>
+                        <h3>Passa di meno da uno strumento all'altro</h3>
+                        <p style="margin-top: 1rem; font-size: 0.8rem; line-height: 1.25rem;">Porta a termine le attivita quotidiane con un solo strumento.
+                            Crea, modifica e condividi contenuti cloud da documenti, fogli e Presentazioni di Google,
+                            file Microsoft Office e Dropbox Paper direttamente da Dropbox.</p>
                     </div>
                 </div>
             </div>

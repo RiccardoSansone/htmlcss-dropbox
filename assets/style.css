@@ -2,8 +2,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 /* #region utility */
+
+:root{
+    --bg-soft: #b4d0e7;
+    --btn-blu: #0061ff;
+    --square-green:#a2d39b;
+    --square-purple:#61082b;
+    --square-azure:#0093ce;
+    --square-orange:#ff1c1c;
+    --square-sand:#f5f5f5;
+    --square-red:#d5001f;
+    --square-gray:#b4d0e7;
+    --square-blu:#0d2481;
+    --square-yellow:#ffd830;
+}
+
+.d-f{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.justify-content-left{
+    justify-content: left;
+}
+
+.gap-0-5{
+    gap: 0.5rem;
+}
+
+.align-item-center{
+    align-items: center;
+}
 
 .d-flex{
     display: flex;
@@ -16,7 +50,7 @@
 .d-flex-column{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* flex-wrap: wrap; */
     width: 100%;
 }
@@ -60,6 +94,29 @@
     object-fit: cover;
 }
 
+.card div{
+    font-size: 0.8rem;
+}
+
+
+.list-unstyled{
+    list-style-type: none;
+}
+
+.color-blu{
+    color: blue;
+}
+
+.card-30 div, .card-70 div{
+    font-size: 0.8rem;
+}
+
+.btn-gray{
+    color: gray;
+    border: 1px solid gray;
+    box-shadow: 0 0 3px gray;
+    font-size: 0.8rem;
+}
 /* #end region utility */
 
 /* #region header */
@@ -80,17 +137,32 @@ a{
 
 }
 
+.btn{
+    padding: 0.3rem 0.8rem;
+}
+.btn-1{
+    width: 200px;
+    padding: 0.3rem 0.8rem;
+    text-align: center;
+}
+
+.btn-blu{
+    background-color:var(--btn-blu);
+    color: white;
+}
+
 #nav-bar{
     height: 60px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: yellowgreen;
+    background-color: white;
+    box-shadow: 0 0 5px gray;
 }
 
-header a, header span{
-    font-size: small;
+header a{
+    font-size: 0.75rem;
 }
 
 /* #endregion header */
@@ -100,20 +172,21 @@ header a, header span{
 .principal-section{
     padding-top: 50px;
     margin-top: 60px;
-    background-color: aquamarine;
+    background-color: var(--bg-soft);
     width: 100%;
     /* height: 450px; */
 }
 
 .container-1{
     width: 70%;
-    /* height: 400px; */
+    height: 460px;
     margin: auto;
-    background-color: blue;
+    font-size: small;
+    /* background-color: blue; */
 }
 
 .second-section{
-    padding-top: 3rem;
+    padding-top: 6rem;
 }
 
 .container-2{

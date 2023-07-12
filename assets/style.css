@@ -117,6 +117,7 @@
     border: 1px solid gray;
     box-shadow: 0 0 3px gray;
     font-size: 0.8rem;
+    transition: 0.2s;
 }
 /* #end region utility */
 
@@ -151,11 +152,13 @@ a{
     background-color: white;
     height: 30px;
     padding: 0.4rem 1.5rem;
+    transition: 0.2s;
 }
 
 .btn-blu{
     background-color:var(--btn-blu);
     color: white;
+    transition: 0.2s;
 }
 
 #nav-bar{
@@ -295,6 +298,10 @@ footer a{
     height: 60px;
     display: flex; 
     align-items: center;
+}
+
+#box-shadow{
+    transition: 0.3s;
 }
 
 #box-shadow:hover{

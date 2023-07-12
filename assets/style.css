@@ -10,15 +10,16 @@
 :root{
     --bg-soft: #b4d0e7;
     --btn-blu: #0061ff;
-    --square-green:#a2d39b;
     --square-purple:#61082b;
-    --square-azure:#0093ce;
-    --square-orange:#ff1c1c;
     --square-sand:#f5f5f5;
-    --square-red:#d5001f;
-    --square-gray:#b4d0e7;
-    --square-blu:#0d2481;
-    --square-yellow:#ffd830;
+    --square-green-inverted:#5d2c64;
+    --square-purple-inverted:#9ef7d4;
+    --square-azure-inverted:#ff6c31;
+    --square-orange-inverted:#00e3e3;
+    --square-red-inverted:#2affe0;
+    --square-gray-inverted:#4b2f18;
+    --square-blu-inverted:#f2db7e;
+    --square-yellow-inverted:#0027cf;
 }
 
 .d-f{
@@ -294,4 +295,116 @@ footer a{
     height: 60px;
     display: flex; 
     align-items: center;
+}
+
+#box-shadow:hover{
+    box-shadow: 0 0 5px gray;
+    padding: 1rem;
+}
+
+.btn-blu:hover{
+    border-radius: 20px;
+    background-color: #33a8f0;
+}
+
+.btn-3:hover, .btn-gray:hover{
+    background-color: var(--square-sand);
+    box-shadow: 0 0 7px rgb(108, 67, 67);
+    border-radius: 20px;
+}
+
+.flex-row{
+    display: flex; 
+    width: 100%; 
+    flex-direction: row;
+}
+
+.flex-row-square{
+    width: 33%; 
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.square{
+    width: 50%; 
+    aspect-ratio: 1; 
+}
+
+.square-1{
+    width: 50%; 
+    aspect-ratio: 1; 
+    border: inset 10px rgba(103, 184, 87, 0.497);
+}
+
+
+.padding-complete{
+    /* padding: 33% 10%;  */
+}
+
+.faq-p{
+    font-weight: lighter;
+}
+
+#faq p{
+    display: none;
+}
+
+#faq:hover p{
+    display: inline-block;
+}
+
+#faq:hover i{
+    rotate: 180deg;
+}
+
+.fix-square{
+    height: 100%; 
+    object-fit: contain;
+    padding: 30% 15%;
+}
+
+.cont{
+    display: flex;
+}
+
+.cont>img{
+    filter: invert();
+    object-fit: contain;
+    padding: 3rem; 
+}
+
+.bg-s-green{
+    background-color: var(--square-green-inverted);
+}
+
+.bg-s-purple{
+    background-color: var(--square-purple-inverted);
+}
+
+.bg-s-azure{
+    background-color: var(--square-azure-inverted);
+}
+
+.bg-s-orange{
+    background-color: var(--square-orange-inverted);
+}
+
+.bg-s-red{
+    background-color: var(--square-red-inverted);
+}
+
+.bg-s-soft{
+    background-color: var(--square-gray-inverted);
+}
+
+.bg-s-blu{
+    background-color: var(--square-blu-inverted);
+}
+
+.bg-s-yellow{
+    background-color: var(--square-yellow-inverted);
+}
+
+.bg-s-sand{
+    background-color: var(--square-sand);
 }
